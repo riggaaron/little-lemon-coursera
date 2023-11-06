@@ -1,0 +1,311 @@
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 16px;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px;
+}
+
+nav ul li a {
+  color: #495e57;
+}
+
+nav ul li a:hover {
+  text-decoration: underline solid #495e57;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 24px;
+  height: 2px;
+  background-color: #495e57;
+  margin: 4px 0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-links.visible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  background-color: #495e57;
+  transition: all 0.5s ease-in-out;
+}
+
+header {
+  background-color: #495e57;
+}
+
+header p {
+  color: #fff;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+button {
+  background-color: #f4ce14;
+  border: 2px solid #f4ce14;
+  color: #495e57;
+}
+
+button:hover {
+  background-color: #fff;
+  border: 2px solid #f4ce14;
+  cursor: pointer;
+}
+
+header section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 48px;
+  height: 352px;
+  max-width: 1020px;
+  margin: auto;
+}
+
+.header-img {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+header img {
+  width: 100%;
+}
+
+header section div {
+  margin: 0 16px;
+}
+
+.btnSubmit input {
+  padding: 12px;
+  margin: 20px;
+  background: #495e57;
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 8px;
+}
+
+.btnSubmit input:hover {
+  padding: 12px;
+  margin: 20px;
+  background: #fff;
+  color: #495e57;
+  border: solid 2px #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#booking {
+  height: auto;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+form {
+  width: 100%;
+}
+
+fieldset {
+  padding: 24px;
+  border: 2px solid white;
+  border-radius: 8px;
+  color: #fff;
+}
+
+fieldset div {
+  display: grid;
+  margin: 8px 0 !important;
+}
+
+#book-date,
+#book-times,
+#book-guests,
+#occasion {
+  font-family: karla;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  padding: 8px;
+}
+
+.confirmed {
+  text-align: center;
+  background-color: #495e57;
+  padding: 120px;
+}
+
+.menu {
+  max-width: 1020px;
+  margin: auto;
+}
+
+.menu-header {
+  margin-top: 64px;
+}
+
+.menu-header div {
+  width: 400px;
+  margin: 0 16px;
+}
+
+.menu-row {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+margin: auto;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  box-shadow: 2px 2px 8px #eee;
+  margin: 16px;
+}
+
+.card-header{
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-header img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-body{
+  padding: 24px;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 80px;
+}
+
+footer img {
+  max-width: 80px;
+  border-radius: 0;
+}
+
+footer a,
+h4 {
+  color: #fff;
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  margin: 32px;
+  grid-gap: 46px;
+}
+
+footer > section > div > ul {
+  padding: 0;
+  font-size: 14px;
+  font-family: "Karla";
+}
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+  }
+  .na-links.visible {
+    display: flex;
+    background-color: #495e57;
+    padding: 20px 0;
+  }
+  .navbar {
+    background: #fff;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .header-img {
+    display: none;
+  }
+
+  .menu-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
